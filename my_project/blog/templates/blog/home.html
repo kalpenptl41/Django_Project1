@@ -1,0 +1,8 @@
+{% extends "blog/base.html" %}
+{% block content %}
+	{% for i in posts %}
+		<h1>{{i.Name}}</h1>
+		<p>{{i.Work}}</p>
+		<p>{{i.Name}} Date of Birth is {{i.Month}} {{i.Date}} {{i.Year}}</p>
+	{% endfor %}
+{% endblock %}
